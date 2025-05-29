@@ -1,8 +1,11 @@
+linearmodels
+pmdarima
 pandas
 numpy
-scikit-learn
 matplotlib
 seaborn
+scikit-learn
 scipy
-category_encoders
+statsmodels
 tensorflow
+joblib
