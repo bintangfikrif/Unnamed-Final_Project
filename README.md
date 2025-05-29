@@ -198,9 +198,3 @@ Trend: Kedua model memprediksi tren penurunan sekitar 800-900 ribu hektar dalam 
 - Arkan Hariz C. Liem (122140038) - Evaluator & Results Visualizer
 - Naufal Haris N. (122140040) - Data Analyst & Engineer
 
-**Program Studi Teknik Informatika**  
-**Institut Teknologi Sumatera - 2025**
-
----
-
-*"Hutan adalah masa depan kita. Mari kita jaga bersama dengan bantuan teknologi! 🌱"*
