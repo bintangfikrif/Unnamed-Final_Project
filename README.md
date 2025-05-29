@@ -36,7 +36,7 @@ Latar belakang masalah ini muncul karena hutan Indonesia terus mengalami penyusu
 - **Rata-rata deforestasi:** ~13.9 ribu hektar per provinsi per tahun
 - **Variabilitas tinggi** antar provinsi (Papua dan Kalimantan dominan)
 
-##Algoritma yang Digunakan
+## Algoritma yang Digunakan
 
 ### 1. ARIMAX (Autoregressive Integrated Moving Average with Exogenous Variables)
 - **Jenis:** Model statistik klasik untuk time series forecasting
@@ -61,7 +61,7 @@ Latar belakang masalah ini muncul karena hutan Indonesia terus mengalami penyusu
 ### Alasan Pemilihan
 Kedua model dipilih untuk membandingkan pendekatan klasik vs modern dalam time series forecasting. ARIMAX mewakili metode statistik yang mapan, sementara GRU mewakili pendekatan AI terkini yang bisa menangkap pola kompleks.
 
-##Panduan Menjalankan Kode
+## Panduan Menjalankan Kode
 
 ### Prasyarat
 ```bash
@@ -75,11 +75,13 @@ pip install statsmodels joblib
 ```
 Unnamed-Final_Project/
 ├── data/
-│   └── geojson/
-│       ├── spatial-metrics-indonesia-burned_area_kabupaten.geojson
-│       ├── spatial-metrics-indonesia-burned_peat_kabupaten.geojson
-│       ├── spatial-metrics-indonesia-remaining_forest_kabupaten.geojson
-│       └── spatial-metrics-indonesia-territorial_deforestation_kabupaten.geojson
+│   ├── geojson/
+│   │   ├── spatial-metrics-indonesia-burned_area_kabupaten.geojson
+│   │   ├── spatial-metrics-indonesia-burned_peat_kabupaten.geojson
+│   │   ├── spatial-metrics-indonesia-remaining_forest_kabupaten.geojson
+│   │   └── spatial-metrics-indonesia-territorial_deforestation_kabupaten.geojson
+│   ├── spatial-metrics-indonesia-remaining_forest_province.csv
+│   └── spatial-metrics-indonesia-territorial_deforestation_province.csv
 ├── notebooks/
 │   └── main.ipynb
 ├── src/
@@ -196,3 +198,9 @@ Trend: Kedua model memprediksi tren penurunan sekitar 800-900 ribu hektar dalam 
 - Arkan Hariz C. Liem (122140038) - Evaluator & Results Visualizer
 - Naufal Haris N. (122140040) - Data Analyst & Engineer
 
+**Program Studi Teknik Informatika**  
+**Institut Teknologi Sumatera - 2025**
+
+---
+
+*"Hutan adalah masa depan kita. Mari kita jaga bersama dengan bantuan teknologi! 🌱"*
