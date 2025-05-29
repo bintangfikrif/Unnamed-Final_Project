@@ -1,14 +1,14 @@
-# 🌲 Prediksi Perubahan Luas Hutan Alam Per Provinsi di Indonesia Menggunakan ARIMAX dan GRU
+# Prediksi Perubahan Luas Hutan Alam Per Provinsi di Indonesia Menggunakan ARIMAX dan GRU
 
 **Tugas Besar Machine Learning - Institut Teknologi Sumatera**
 
-## 📋 Deskripsi Singkat Proyek
+## Deskripsi Singkat Proyek
 
 Proyek ini fokus untuk memprediksi perubahan luas hutan alam di Indonesia menggunakan dua pendekatan yang berbeda: model statistik klasik ARIMAX dan model deep learning GRU. Dataset yang digunakan mencakup data historis luas hutan alam dan laju deforestasi per provinsi dari tahun 2001-2022.
 
 Latar belakang masalah ini muncul karena hutan Indonesia terus mengalami penyusutan akibat deforestasi. Padahal hutan Indonesia punya peran vital sebagai "paru-paru dunia" dan habitat keanekaragaman hayati. Dengan model prediksi yang akurat, diharapkan bisa membantu pemerintah dalam merumuskan kebijakan pengelolaan hutan yang lebih efektif.
 
-## 📊 Penjelasan Dataset
+## Penjelasan Dataset
 
 ### Sumber Dataset
 - **Sumber:** Trase Earth (website resmi untuk tracking supply chains)
@@ -36,7 +36,7 @@ Latar belakang masalah ini muncul karena hutan Indonesia terus mengalami penyusu
 - **Rata-rata deforestasi:** ~13.9 ribu hektar per provinsi per tahun
 - **Variabilitas tinggi** antar provinsi (Papua dan Kalimantan dominan)
 
-## 🤖 Algoritma yang Digunakan
+##Algoritma yang Digunakan
 
 ### 1. ARIMAX (Autoregressive Integrated Moving Average with Exogenous Variables)
 - **Jenis:** Model statistik klasik untuk time series forecasting
@@ -61,7 +61,7 @@ Latar belakang masalah ini muncul karena hutan Indonesia terus mengalami penyusu
 ### Alasan Pemilihan
 Kedua model dipilih untuk membandingkan pendekatan klasik vs modern dalam time series forecasting. ARIMAX mewakili metode statistik yang mapan, sementara GRU mewakili pendekatan AI terkini yang bisa menangkap pola kompleks.
 
-## 🚀 Panduan Menjalankan Kode
+##Panduan Menjalankan Kode
 
 ### Prasyarat
 ```bash
@@ -96,7 +96,7 @@ Unnamed-Final_Project/
 
 1. **Clone Repository**
    ```bash
-   git clone [repository-url]
+   git clone [https://github.com/bintangfikrif/Unnamed-Final_Project.git]
    cd Unnamed-Final_Project
    ```
 
@@ -138,7 +138,7 @@ GRU:
 - MAE: 57,383.70 hektar
 - R²: 0.8184 (81.84%)
 
-🏆 GRU menang telak dengan improvement:
+GRU menang telak dengan improvement:
 - RMSE: 42.6% lebih baik
 - MAE: 47.1% lebih baik  
 - R²: 82.4% lebih baik
@@ -156,7 +156,7 @@ Tahun 2030:
 - ARIMAX: 86,150,832 hektar  
 - GRU: 86,267,530 hektar
 
-Trend: Kedua model memprediksi tren penurunan sekitar 800-900 ribu hektar dalam 8 tahun ke depan 📉
+Trend: Kedua model memprediksi tren penurunan sekitar 800-900 ribu hektar dalam 8 tahun ke depan 
 ```
 
 ### Visualisasi Utama
@@ -178,7 +178,7 @@ Trend: Kedua model memprediksi tren penurunan sekitar 800-900 ribu hektar dalam 
    - Time series plot untuk masing-masing wilayah induk (Sumatera, Kalimantan, Papua, dll)
    - Papua konsisten punya luas hutan terbesar, diikuti Kalimantan
 
-## 🎯 Key Findings
+## Key Findings
 
 - **GRU >> ARIMAX** dalam hal akurasi prediksi
 - Kedua model konsisten memprediksi **tren penurunan** luas hutan
@@ -186,7 +186,7 @@ Trend: Kedua model memprediksi tren penurunan sekitar 800-900 ribu hektar dalam 
 - **Deforestasi tertinggi** di Kalimantan Barat dan Riau
 - Model bisa jadi tools yang berguna untuk **policy making** di bidang kehutanan
 
-## 👥 Tim Pengembang
+## Tim Pengembang
 
 - Bintang Fikri Fauzan (122140008) - Project Leader & Design Researcher
 - Cindy Nadila Putri (122140002) - Data Analyst & Engineer  
