@@ -75,16 +75,15 @@ pip install statsmodels joblib
 ```
 Unnamed-Final_Project/
 ├── data/
-│   ├── geojson/
-│   │   ├── spatial-metrics-indonesia-burned_area_kabupaten.geojson
-│   │   ├── spatial-metrics-indonesia-burned_peat_kabupaten.geojson
-│   │   ├── spatial-metrics-indonesia-remaining_forest_kabupaten.geojson
-│   │   └── spatial-metrics-indonesia-territorial_deforestation_kabupaten.geojson
 │   ├── spatial-metrics-indonesia-remaining_forest_province.csv
 │   └── spatial-metrics-indonesia-territorial_deforestation_province.csv
 ├── notebooks/
 │   └── main.ipynb
 ├── src/
+|   ├── evaluasi-matrix.png
+|   ├── prediksi-luas-hutan.png
+|   ├── Breakdown MAE.png
+|   ├── Breakdown RMSE.png
 │   ├── model_gru_forest.h5
 │   ├── scaler_gru.pkl
 │   └── tes.py
@@ -124,7 +123,7 @@ Unnamed-Final_Project/
 - **Model parameters:** Bisa disesuaikan di section model building
 - **Prediction horizon:** Default sampai 2030, bisa diubah sesuai kebutuhan
 
-## 📈 Contoh Hasil Output dan Visualisasi
+## 📈 Hasil Output dan Visualisasi
 
 ### Metrik Evaluasi
 ```
@@ -146,7 +145,11 @@ GRU menang telak dengan improvement:
 - R²: 82.4% lebih baik
 ```
 
-### Contoh Prediksi
+### Komparasi Perbandingan Hasil Metrik Evaluasi
+![perbandingan rmse](src/Breakdown%20RMSE.png)
+![perbandingan mae](src/Breakdown%20MAE.png)
+
+### Hasil Prediksi
 ```
 Proyeksi Luas Hutan Nasional:
 
@@ -164,21 +167,15 @@ Trend: Kedua model memprediksi tren penurunan sekitar 800-900 ribu hektar dalam 
 ### Visualisasi Utama
 
 1. **Plot Perbandingan Historical vs Prediction**
+   ![perbandingan prediksi](src/prediksi-luas-hutan.png)
    - Garis biru: Data historis 2001-2022
    - Garis merah: Prediksi ARIMAX 2023-2030 (dengan confidence interval)
    - Garis hijau: Prediksi GRU 2023-2030
 
 2. **Grafik Perbandingan Metrik**
+   ![evaluasi matrix](src/evaluasi-matrix.png)
    - Bar chart comparison RMSE, MAE, dan R² antara kedua model
    - Jelas terlihat GRU unggul di semua metrik
-
-3. **Distribusi Error Analysis**  
-   - Histogram residual kedua model
-   - GRU punya distribusi error yang lebih centered dan konsisten
-
-4. **Trend Analysis per Wilayah**
-   - Time series plot untuk masing-masing wilayah induk (Sumatera, Kalimantan, Papua, dll)
-   - Papua konsisten punya luas hutan terbesar, diikuti Kalimantan
 
 ## Key Findings
 
@@ -190,11 +187,11 @@ Trend: Kedua model memprediksi tren penurunan sekitar 800-900 ribu hektar dalam 
 
 ## Tim Pengembang
 
-- Bintang Fikri Fauzan (122140008) - Project Leader & Design Researcher
-- Cindy Nadila Putri (122140002) - Data Analyst & Engineer  
-- Ferdana Al Halkim (122140012) - ML Engineer
-- M. Fakhri Nur (122140034) - Documentation & GitHub Manager
-- Rafki Haykhal Alif (122140035) - ML Engineer
-- Arkan Hariz C. Liem (122140038) - Evaluator & Results Visualizer
-- Naufal Haris N. (122140040) - Data Analyst & Engineer
+- Bintang Fikri Fauzan (122140008) - Project Leader & Design Researcher - @bintangfikrif
+- Cindy Nadila Putri (122140002) - Data Analyst & Engineer - @cindynadilaptr
+- Ferdana Al Halkim (122140012) - ML Engineer - @luciferdana
+- M. Fakhri Nur (122140034) - Documentation & GitHub Manager - @Sovenable
+- Rafki Haykhal Alif (122140035) - ML Engineer - @RafkiHaykhalAlif
+- Arkan Hariz C. Liem (122140038) - Evaluator & Results Visualizer - @ArkanHariz
+- Naufal Haris N. (122140040) - Data Analyst & Engineer - @Harisskh
 
