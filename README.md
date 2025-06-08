@@ -1,4 +1,4 @@
-# Prediksi Perubahan Luas Hutan Alam Per Provinsi di Indonesia Menggunakan ARIMAX dan GRU
+# Prediksi Perubahan Luas Hutan Alam di Indonesia Menggunakan ARIMAX dan GRU
 
 **Tugas Besar Machine Learning - Institut Teknologi Sumatera**
 
@@ -89,6 +89,7 @@ Unnamed-Final_Project/
 │   └── tes.py
 ├── LICENSE
 ├── README.md
+├── app.py
 ├── requirements.txt
 └── Unnamed-Final-Report.pdf
 ```
