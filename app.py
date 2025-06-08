@@ -19,7 +19,7 @@ st.title("🌏 Dashboard Analisis Deforestasi dan Prediksi Luas Hutan Indonesia"
 st.markdown("Dasbor ini mengintegrasikan analisis historis deforestasi per provinsi dengan hasil prediksi luas hutan nasional menggunakan model time series GRU dan ARIMAX.")
 
 # --------------------------------------------------------------------------
-# 3. FUNGSI UNTUK MEMUAT DAN MEMBERSIHKAN DATA (PENDEKATAN BARU)
+# 3. FUNGSI UNTUK MEMUAT DAN MEMBERSIHKAN DATA 
 # --------------------------------------------------------------------------
 @st.cache_data
 def load_data():
@@ -41,7 +41,6 @@ def load_data():
     # --- File 2: Remaining Forest (format: LONG) ---
     path_remaining = 'data/spatial-metrics-indonesia-remaining_forest_province.csv'
     df_remaining = pd.read_csv(path_remaining)
-    # Ganti nama kolom agar seragam
     df_remaining.rename(columns={
         'year': 'Tahun',
         'region': 'province',
@@ -60,9 +59,8 @@ def load_data():
 # Memuat semua data
 df_deforestation, df_remaining, provinces, years, national_actual = load_data()
 
-
 # --------------------------------------------------------------------------
-# 4. DATA PREDIKSI (Berdasarkan Laporan PDF Anda)
+# 4. DATA PREDIKSI 
 # --------------------------------------------------------------------------
 pred_years = np.arange(2023, 2031) # Prediksi dimulai setelah tahun data terakhir (2022)
 
